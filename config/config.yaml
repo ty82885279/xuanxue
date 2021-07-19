@@ -1,0 +1,30 @@
+name: "xuanxue"
+version: "1.0.1"
+mode: "dev"
+port: 8082
+start_time: "2020-10-23"
+machine_id: 1
+
+log:
+  level: "debug"
+  filename: "app.log"
+  max_size: 200
+  max_age: 30
+  max_backups: 7
+
+mysql:
+  host: "127.0.0.1"
+  port: 3306
+  user: "root"
+  password: "root123"
+  dbname: "xuanxue"
+  max_open_conns: 200
+  max_idle_conns: 50
+
+redis:
+  host: "127.0.0.1"
+  port: 6379
+  password: ""
+  db: 0
+  pool_size: 100
+
